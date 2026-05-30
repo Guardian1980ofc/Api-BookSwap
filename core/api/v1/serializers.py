@@ -6,7 +6,7 @@ from core.models import Perfil, Livro, Troca, Avaliacao
 class PerfilSerializer(serializers.ModelSerializer): # classe que define como o modelo Perfil será convertido para JSON e vice-versa
     class Meta:
         model = Perfil # modelo que será serializado
-        fields = ['id', 'nome', 'cidade', 'created_at', 'updated_at'] #campos que serão expostos na API
+        fields = ['id', 'usuario', 'nome', 'cidade', 'created_at', 'updated_at'] #campos que serão expostos na API
         read_only_fields = ['created_at', 'updated_at'] # campos que o usuário não pode enviar, só receber
 
 class LivroSerializer(serializers.ModelSerializer):
