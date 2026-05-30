@@ -1,3 +1,7 @@
 from django.contrib import admin
+from core.models import Perfil, Livro, Troca, Avaliacao
 
-# Register your models here.
+admin.site.register(Perfil)
+admin.site.register(Livro)
+admin.site.register(Troca)
+admin.site.register(Avaliacao)
